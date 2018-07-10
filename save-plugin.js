@@ -32,6 +32,10 @@ window.addEventListener("load", function(event) {
     choices.forEach(function(choice) {
       var input = document.getElementById(choice.id);
 
+      if (!input) {
+        return;
+      }
+
       if (input.type === 'checkbox') {
         input.checked = choice.value;
         return;
