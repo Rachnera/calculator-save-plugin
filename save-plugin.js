@@ -73,6 +73,8 @@ window.addEventListener("load", function(event) {
       var data = JSON.parse(event.target.result);
       fileNamer.value = data.context.name;
       fillAllChoices(data.choices);
+      // Clean the button so we can reload the same file
+      importButton.value = "";
     }
   }
 
