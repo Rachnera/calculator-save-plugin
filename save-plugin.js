@@ -4,7 +4,7 @@ window.addEventListener("load", function(event) {
     return;
   }
 
-  var inputs = document.querySelectorAll('body > .grid-container > .grid-item input, body > .grid-container > .grid-item select');
+  var inputs = document.querySelectorAll('body > .grid-container > .grid-item input, body > .grid-container > .grid-item select, #panel-option input, #panel-option select');
   // To be replaced with initialization through document.getElementById()
   var importButton = document.createElement('input');
   var exportButton = document.createElement('a');
